@@ -1,0 +1,26 @@
+.header{
+	text-align: center;
+	font-size: 20px;
+	font-family: helvetica;
+}
+
+#chatbox{
+	width: 90%;
+	min-height: 10em;
+	border: solid 4px black;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#usernamebox {
+	text-align: center;
+}
+#messagebox {
+	text-align: center;
+}
+#submit {
+	text-align: center;
+}
+
+
+
