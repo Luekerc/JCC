@@ -2,6 +2,9 @@
 	text-align: center;
 	font-size: 20px;
 	font-family: helvetica;
+	padding: 1em 0 1em 0;
+	margin-top: 2em;
+	background-color: rgb(200,128,128)
 }
 
 #chatbox{
@@ -11,11 +14,11 @@
 	text-align: center;
 	margin: 10px auto;
 	overflow: scroll;
-
 }
 
 #usernamebox {
 	text-align: center;
+	margin-left: 1em;
 }
 #messagebox {
 	text-align: center;
@@ -25,12 +28,12 @@
 }
 
 .row {
-
+border-bottom: solid 1px black;
 }
 
 .onscreenusername {
 	padding-left: 1em;
-	margin-right: 1em;
+	margin-left: 1em;
 	
 	float: left;
 }
@@ -38,4 +41,6 @@
 .message {
 	float: left;
 }
-
+.timestamp {
+	text-align: right;
+}
