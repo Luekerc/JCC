@@ -12,8 +12,6 @@
 	margin: 10px auto;
 	overflow: scroll;
 
-
-
 }
 
 #usernamebox {
@@ -26,5 +24,18 @@
 	text-align: center;
 }
 
+.row {
 
+}
+
+.onscreenusername {
+	padding-left: 1em;
+	margin-right: 1em;
+	
+	float: left;
+}
+
+.message {
+	float: left;
+}
 

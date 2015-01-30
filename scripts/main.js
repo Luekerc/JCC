@@ -4,7 +4,7 @@ $('#submit').on('click', onSubmitButtonClick);
 function onSubmitButtonClick()	{
 	console.log($('#usernamebox').val());
 	console.log($('#messagebox').val());
-	// var now=timeStamp();
+
 
 	$.post(
 		'https://nameless-dusk-3865.herokuapp.com/users.json',
@@ -12,6 +12,7 @@ function onSubmitButtonClick()	{
 			user: {
 				message: $('#messagebox').val(),
 				user_name: $('#usernamebox').val(),
+				
 				}
 		}, 
 			function(message){
@@ -22,9 +23,6 @@ function onSubmitButtonClick()	{
 		);
 	$('#messagebox').val('');
 	$('#usernamebox').val('');
-
-
-
 
 }
 	var getMessages = function() {
@@ -38,11 +36,11 @@ function onSubmitButtonClick()	{
 	};
 
 	var render = function(messages) {
-		var messageRow = _.template('<br><div class="row"><div><strong><%= user_name %></strong></div><div><%= message %></div></div>');
+		var messageRow = _.template('<br><div class="row"><div class="onscreenusername">Username:  <%= user_name %></div><div class="message"> - <%= message %></div><div class="timestamp"><%= time_stamp %></div></div><br>');
 		console.log(messages);
 			for(var i=0; i<messages.length; i++) {
-			if(messages[i].message && messages[i].user_name) {
-				$('#chatbox').append(messageRow(messages[i]) );
+			if(messages[i].message && messages[i].user_name && messages[i].time_stamp) {
+				$('#chatbox').prepend(messageRow(messages[i]) );
 			}
 		}
 	};
