@@ -36,7 +36,7 @@ function onSubmitButtonClick()	{
 	};
 
 	var render = function(messages) {
-		var messageRow = _.template('<br><div class="row"><div class="onscreenusername">Username:  <%= user_name %></div><div class="message"> - <%= message %></div><div class="timestamp"><%= time_stamp %></div></div><br>');
+		var messageRow = _.template('<br><div class="row"><div class="onscreenusername"><%= user_name %>: &nbsp;</div><div class="message"><%= message %></div><div class="timestamp"><%= time_stamp %></div></div><br>');
 		console.log(messages);
 			for(var i=0; i<messages.length; i++) {
 			if(messages[i].message && messages[i].user_name && messages[i].time_stamp) {

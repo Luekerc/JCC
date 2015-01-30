@@ -1,12 +1,17 @@
 .header{
 	text-align: center;
-	font-size: 20px;
-	font-family: helvetica;
+	font-size: 40px;
+	font-family: 'droid sans' serif;
 	padding: 1em 0 1em 0;
 	margin-top: 2em;
-	background-color: yellow;
+	color: white;
+	font-weight: bold;
 }
 
+body {
+	background:rgb(236, 146, 189);
+	
+}
 #chatbox{
 	width: 90%;
 	height: 20em;
@@ -15,6 +20,8 @@
 	/*margin: 10px auto;*/
 	padding: 0 1em 0 1em;
 	overflow: scroll;
+	background-color: white;
+	margin: 0 2em 0 2em;
 }
 
 #usernamebox {
