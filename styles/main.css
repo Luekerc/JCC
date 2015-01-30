@@ -6,43 +6,56 @@
 	margin-top: 2em;
 	color: white;
 	font-weight: bold;
+	background-color: rgb(28,172,240);
+	margin-bottom: 1em;
 }
 
 body {
-	background:rgb(236, 146, 189);
+	background-color:rgb(236, 146, 189);
 	
 }
 #chatbox{
-	width: 90%;
-	height: 20em;
+	width: 80%;
+	height: 15em;
 	border: solid 4px black;
-	text-align: center;
 	/*margin: 10px auto;*/
+	font-family: 'droid sans' serif;
 	padding: 0 1em 0 1em;
 	overflow: scroll;
-	background-color: white;
 	margin: 0 2em 0 2em;
+	font-size: 1.25em;
+	color: black;
+	background-color: rgb(170,180,110);
+	position: relative;
+}
+.usernamesubmitbox {
+	margin-left: 3em;
+	margin-top: 1em;
+	font-family: 'droid sans' serif;
 }
 
 #usernamebox {
 	text-align: center;
-	margin-left: 1em;
+	margin-left: 0.7em;
 }
 #messagebox {
 	text-align: center;
+	margin-left: 1.75em;
 }
 #submit {
 	text-align: center;
+	padding-bottom: 5px;
 }
 
 .row {
 border-bottom: solid 1px black;
+color: black;
+
 }
 
 .onscreenusername {
 	padding-left: 1em;
 	margin-left: 1em;
-	
 	float: left;
 }
 
