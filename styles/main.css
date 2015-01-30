@@ -4,7 +4,7 @@
 	font-family: helvetica;
 	padding: 1em 0 1em 0;
 	margin-top: 2em;
-	background-color: rgb(200,128,128)
+	background-color: yellow;
 }
 
 #chatbox{
@@ -12,7 +12,8 @@
 	height: 20em;
 	border: solid 4px black;
 	text-align: center;
-	margin: 10px auto;
+	/*margin: 10px auto;*/
+	padding: 0 1em 0 1em;
 	overflow: scroll;
 }
 
