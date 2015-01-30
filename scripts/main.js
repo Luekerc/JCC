@@ -38,11 +38,10 @@ function onSubmitButtonClick()	{
 	};
 
 	var render = function(messages) {
-		var messageRow = _.template('<br><div class="row"><div><strong><%= user_name %></strong></div><div><%= message %></div><div><%= time %></div></div>');
+		var messageRow = _.template('<br><div class="row"><div><strong><%= user_name %></strong></div><div><%= message %></div></div>');
 		console.log(messages);
-		$('#chatbox').html('');
-		for(var i=0; i<messages.length; i++) {
-			if(messages[i].message && messages[i].name && messages[i].time) {
+			for(var i=0; i<messages.length; i++) {
+			if(messages[i].message && messages[i].user_name) {
 				$('#chatbox').append(messageRow(messages[i]) );
 			}
 		}
