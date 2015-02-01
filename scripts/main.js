@@ -1,5 +1,5 @@
 $(document).ready(function()	{
-$('#submit').on('click', onSubmitButtonClick);
+$('.submit').on('click', onSubmitButtonClick);
 
 function onSubmitButtonClick()	{
 	console.log($('#usernamebox').val());
