@@ -3,7 +3,8 @@
 	font-size: 40px;
 	font-family: 'Orbitron', sans-serif;
 	padding: 1em 0 1em 0;
-	margin: .5em 8em 0 8em;
+	margin: .5em 1em 0 1em;  
+/*	margin: .5em 8em 0 8em; save this for when you go to full screen*/
 	color: rgb(84,79,76);
 	font-weight: bold;
 	background-color: rgb(225,213,197);
@@ -15,26 +16,25 @@
 body {
 	background-color:rgb(224,82,96);
 	color: rgb(84,79,76);
+	text-align: left;
 
 	
 }
 #chatbox{
-	
-	height: 19em;
-	border: solid 4px rgb(84,79,76);
-	/*margin: 10px auto;*/
+	height: 13em;
+    border: solid 4px rgb(84,79,76);
 	font-family: 'droid sans' serif;
 	padding: 0 1em 0 1em;
 	overflow: scroll;
-	margin-right: 2em;
+/*	margin-right: 2em;*/
 	margin-left: 2em;
 	font-size: 1em;
 	color: black;
 	background-color: rgb(225,213,197);
 	border-radius: 50px;
-	/*position: relative;*/
 }
-.usernamesubmitbox {
+
+#usernamemessagesubmit {
 	margin-left: 3em;
 	margin-top: 1em;
 	font-family: 'droid sans' serif;
@@ -51,33 +51,27 @@ body {
 	font-family: 'droid sans' serif;
 	height: 2em;
 	width: 20em;
-
-
 }
 #messagebox {
 	text-align: center;
-	margin-left: 1.75em;
+	margin-left: .75em;
 	background-color: rgb(225,213,197);
-	width: 50em;
+	width: 20em;
+	height: 10em;
 	border: solid 2px rgb(84,79,76);
 	border-radius: 50px;
 	font-family: 'droid sans' serif;
-	height: 2em;
-
-
+/*	display: block; *//*hide this on wide screen*/
 }
-#submit {
+.submit {
 	text-align: center;
-	
 	background-color: rgb(225,213,197);
-	display: inline-block;
 	border-radius: 50px;
 	width: 7em;
-	margin-left: 1em;
 	border: solid 2px rgb(84,79,76);
 	font-family: 'droid sans' serif;
 	height: 2.4em;
-
+	display: block;
 }
 
 .row {
@@ -89,12 +83,86 @@ color: rgb(84,79,76);
 .onscreenusername {
 	padding-left: 1em;
 	margin-left: 1em;
-	float: left;
+/*	float: left;*/
 }
 
 .message {
-	float: left;
+	margin-left: 1em;/*delete for wider screen*/
+	padding-left: 1em;/*delete for wider screen*/
+	/*float: left;*/
 }
 .timestamp {
+	text-align: center;
+	font-size: 10px;
+	padding-top: 1em;/*delete this on wider screen*/
+/*	text-align: right;*/
+}
+
+@media (max-width: 480px){
+	#messagebox{
+		display: block;
+	}
+}
+
+@media (min-width: 480px) {
+
+.header {
+	margin: .5em 8em 0 8em;
+}
+
+#chatbox{
+	height: 19em;
+}
+
+
+.submit{
+	float: left;
+	margin-left: 7em;
+}
+
+.onscreenusername {
+	float: left;
+}
+
+
+.timestamp {
+	font-size: 10px;
+	padding-top: 1em;
 	text-align: right;
+}
+}
+
+@media (max-width: 768px){
+	.submit{
+		display: block;
+		margin-left: 7em;
+	}
+}
+
+@media (min-width: 768px) {
+
+.message {
+	margin-left: 0;
+	padding-left: 0;
+	float: left;
+}
+#messagebox {
+	text-align: center;
+	margin-left: 1.75em;
+	width: 50em;
+	height: 2em;
+	float: left;
+	
+}
+.submit{
+	margin-left: 2em;
+}
+@media (min-width: 1040px){
+.submit{
+		float: left;
+		margin-left: 0.5em;
+	}
+#usernamebox{
+		float: left;
+	}
 }
