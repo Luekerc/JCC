@@ -1,8 +1,8 @@
 .header{
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	font-family: 'Orbitron', sans-serif;
-	padding: 1em 1em 1em 0em;
+	padding: 1em 1em 1em 0.5em;
 	margin: .5em 1em 0 1.5em;  
 /*	margin: .5em 8em 0 8em; save this for when you go to full screen*/
 	color: rgb(84,79,76);
@@ -72,6 +72,7 @@ body {
 	font-family: 'droid sans' serif;
 	height: 2.4em;
 	display: block;
+
 }
 
 .row {
@@ -82,7 +83,7 @@ color: rgb(84,79,76);
 
 .onscreenusername {
 	padding-left: 1em;
-	margin-left: 1em;
+	margin-left: 1.25em;
 /*	float: left;*/
 }
 
@@ -133,7 +134,7 @@ color: rgb(84,79,76);
 }
 
 @media (max-width: 768px){
-	.submit{
+.submit{
 		display: block;
 		margin-left: 7em;
 	}
@@ -159,6 +160,7 @@ color: rgb(84,79,76);
 }
 @media (min-width: 1040px){
 .header{
+	font-size: 40px;
 		margin: .5em 8em 0 8em;
 	}
 .submit{
